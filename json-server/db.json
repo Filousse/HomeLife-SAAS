@@ -1,0 +1,18 @@
+{
+    "users": [
+      { "id": 1, "pseudo": "PierreEducateur", "mail": "pierre@ccas-educateur.fr", "group": "educ"},
+      { "id": 2, "pseudo": "MarieInfirmière", "mail": "pierre@ccas-medical.fr", "group": "medical"},
+      { "id": 1, "pseudo": "M.JeanChef", "mail": "jean@ccas-admin.fr", "group": "admin"}
+    ],
+    "residents": [
+      { "id": 1, "name": "Dujardin", "surname": "Camille", "age": 17, "ProfileFoto": "testsrc" },
+      { "id": 2, "name": "Legrand", "surname": "Thomas", "age": 12, "ProfileFoto": "testsrc" },
+      { "id": 3, "name": "Durant", "surname": "Lucas", "age": 14, "ProfileFoto": "testsrc" },
+      { "id": 4, "name": "Lefevre", "surname": "Marine", "age": 20, "ProfileFoto": "testsrc" },
+      { "id": 5, "name": "Imaoui", "surname": "Romy", "age": 21, "ProfileFoto": "testsrc" },
+      { "id": 6, "name": "Delobelle", "surname": "Yann", "age": 17, "ProfileFoto": "testsrc" },
+      { "id": 8, "name": "Faes", "surname": "Quentin", "age": 19, "ProfileFoto": "testsrc" },
+      { "id": 9, "name": "Debruyne", "surname": "Sybille", "age": 17, "ProfileFoto": "testsrc" },
+      { "id": 10, "name": "delabrie", "surname": "Sean", "age": 14, "ProfileFoto": "testsrc" }
+    ]
+  }
