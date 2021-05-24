@@ -1,18 +1,203 @@
 {
-    "users": [
-      { "id": 1, "pseudo": "PierreEducateur", "mail": "pierre@ccas-educateur.fr", "group": "educ"},
-      { "id": 2, "pseudo": "MarieInfirmière", "mail": "pierre@ccas-medical.fr", "group": "medical"},
-      { "id": 1, "pseudo": "M.JeanChef", "mail": "jean@ccas-admin.fr", "group": "admin"}
+  "users": [
+    {
+      "id": 0,
+      "surname": "Brasseur",
+      "name": "Pierre",
+      "group": "educ",
+      "fonction": "",
+      "mail": "test@educ",
+      "password": "1234"
+    },
+    {
+      "id": 1,
+      "surname": "Labrie",
+      "name": "Marie",
+      "group": "medical",
+      "fonction": "",
+      "mail": "marie@ccas-medical.fr",
+      "password": "medical"
+    },
+    {
+      "id": 2,
+      "surname": "Durand",
+      "name": "Alain",
+      "group": "admin",
+      "fonction": "",
+      "mail": "jean@ccas-admin.fr",
+      "password": "admin"
+    },
+    {
+      "params": {
+        "id": 3,
+        "surname": "test",
+        "name": "test",
+        "group": "educ",
+        "fonction": "test",
+        "mail": "t-brasseur@hotmail.fr",
+        "password": "aaaaaa"
+      },
+      "id": 3
+    },
+    {
+      "params": {
+        "id": 3,
+        "surname": "test",
+        "name": "test",
+        "group": "educ",
+        "fonction": "test",
+        "mail": "t-brasseur@hotmail.fr",
+        "password": "aaaaaa"
+      },
+      "id": 4
+    },
+    {
+      "data": {
+        "id": 3,
+        "surname": "test",
+        "name": "test",
+        "group": "educ",
+        "fonction": "test",
+        "mail": "t-brasseur@hotmail.fr",
+        "password": "zzzzzz"
+      },
+      "id": 5
+    },
+    {
+      "data": {
+        "id": 3,
+        "surname": "test",
+        "name": "test",
+        "group": "educ",
+        "fonction": "test",
+        "mail": "t-brasseur@hotmail.fr",
+        "password": "123456"
+      },
+      "id": 6
+    },
+    {
+      "data": {
+        "id": 3,
+        "surname": "test",
+        "name": "test",
+        "group": "educ",
+        "fonction": "test",
+        "mail": "t-brasseur@hotmail.fr",
+        "password": "qqqqqq"
+      },
+      "id": 7
+    },
+    [
+      {
+        "id": 3,
+        "surname": "testaaaa",
+        "name": "test",
+        "group": "educ",
+        "fonction": "test",
+        "mail": "brasseur.blz@gmail.com",
+        "password": "aaaaaa"
+      }
     ],
-    "residents": [
-      { "id": 1, "name": "Dujardin", "surname": "Camille", "age": 17, "ProfileFoto": "testsrc" },
-      { "id": 2, "name": "Legrand", "surname": "Thomas", "age": 12, "ProfileFoto": "testsrc" },
-      { "id": 3, "name": "Durant", "surname": "Lucas", "age": 14, "ProfileFoto": "testsrc" },
-      { "id": 4, "name": "Lefevre", "surname": "Marine", "age": 20, "ProfileFoto": "testsrc" },
-      { "id": 5, "name": "Imaoui", "surname": "Romy", "age": 21, "ProfileFoto": "testsrc" },
-      { "id": 6, "name": "Delobelle", "surname": "Yann", "age": 17, "ProfileFoto": "testsrc" },
-      { "id": 8, "name": "Faes", "surname": "Quentin", "age": 19, "ProfileFoto": "testsrc" },
-      { "id": 9, "name": "Debruyne", "surname": "Sybille", "age": 17, "ProfileFoto": "testsrc" },
-      { "id": 10, "name": "delabrie", "surname": "Sean", "age": 14, "ProfileFoto": "testsrc" }
-    ]
-  }
+    {
+      "surname": "testaaaaqqq",
+      "name": "test",
+      "group": "educ",
+      "fonction": "test",
+      "mail": "rojas.jofre@gmail.com",
+      "password": "aaaaaa",
+      "id": 9
+    },
+    {
+      "surname": "testaaaaqqq",
+      "name": "test",
+      "group": "educ",
+      "fonction": "test",
+      "mail": "rojas.jofre@gmail.com",
+      "password": "123456",
+      "id": 10
+    },
+    {
+      "surname": "testaaaaqqq",
+      "name": "test",
+      "group": "educ",
+      "fonction": "test",
+      "mail": "t-brasseur@hotmail.fr",
+      "password": "aaaaaa",
+      "id": 11
+    },
+    {
+      "surname": "PAul",
+      "name": "test",
+      "group": "educ",
+      "fonction": "test",
+      "mail": "fdudigitalagency@gmail.com",
+      "password": "654321",
+      "id": 12
+    },
+    {
+      "surname": "PAul",
+      "name": "test",
+      "group": "educ",
+      "fonction": "test",
+      "mail": "t-brasseur@hotmail.fr",
+      "password": "7654321",
+      "id": 13
+    }
+  ],
+  "residents": [
+    {
+      "name": "Dujardin",
+      "surname": "Camille",
+      "age": 17,
+      "ProfileFoto": "testsrc"
+    },
+    {
+      "name": "Legrand",
+      "surname": "Thomas",
+      "age": 12,
+      "ProfileFoto": "testsrc"
+    },
+    {
+      "name": "Durant",
+      "surname": "Lucas",
+      "age": 14,
+      "ProfileFoto": "testsrc"
+    },
+    {
+      "name": "Lefevre",
+      "surname": "Marine",
+      "age": 20,
+      "ProfileFoto": "testsrc"
+    },
+    {
+      "name": "Imaoui",
+      "surname": "Romy",
+      "age": 21,
+      "ProfileFoto": "testsrc"
+    },
+    {
+      "name": "Delobelle",
+      "surname": "Yann",
+      "age": 17,
+      "ProfileFoto": "testsrc"
+    },
+    {
+      "name": "Faes",
+      "surname": "Quentin",
+      "age": 19,
+      "ProfileFoto": "testsrc"
+    },
+    {
+      "name": "Debruyne",
+      "surname": "Sybille",
+      "age": 17,
+      "ProfileFoto": "testsrc"
+    },
+    {
+      "name": "Delabrie",
+      "surname": "Sean",
+      "age": 14,
+      "ProfileFoto": "testsrc"
+    }
+  ]
+}

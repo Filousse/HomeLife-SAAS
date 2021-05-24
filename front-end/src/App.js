@@ -1,24 +1,48 @@
-import React, { useEffect } from "react";
-import './App.css';
-import api from "./api/db";
+import React from "react"
+// import api from "./api/db"
+import Signup from "./components/authentification/Signup"
+import { Container } from "react-bootstrap"
+import { AuthProvider } from "./contexts/AuthContext"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Dashboard from "./components/authentification/Dashboard"
+import Login from "./components/authentification/Login"
+import PrivateRoute from "./components/authentification/PrivateRoute"
+import ForgotPassword from "./components/authentification/ForgotPassword"
+import UpdateProfile from "./components/authentification/UpdateProfile"
 
 function App() {
 
-  useEffect(() => {
-      const getDb = async () => {
-        const response = await api.get("/residents");
-        console.log("=== DATA =>", response.data)
-        return response.data;
-      };
-    getDb();
-  }, []);
+  // useEffect(() => {
+  //     const getDb = async () => {
+  //       const response = await api.get("/users");
+  //       console.log("=== DATA =>", response.data)
+  //       return response.data;
+  //     };
+  //   getDb();
+  // }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-      Home life
-      </header>
-    </div>
-  );
+    <Container
+      className="d-flex align-items-center justify-content-center"
+      style={{ minHeight: "100vh" }}
+    >
+      <div className="w-100" style={{ maxWidth: "400px" }}>
+        <Router>
+            <AuthProvider>
+            <Switch>
+              <PrivateRoute exact path="/" component={Dashboard} />
+              <PrivateRoute path="/update-profile" component={UpdateProfile} />
+              <Route exact path="/" component={Dashboard} />
+              <Route path="/update-profile" component={UpdateProfile} />
+              <Route path="/signup" component={Signup} />
+              <Route path="/login" component={Login} />
+              <Route path="/forgot-password" component={ForgotPassword} />
+            </Switch>
+          </AuthProvider>
+        </Router>
+      </div>
+    </Container>
+  )
 }
-export default App;
+
+export default App
