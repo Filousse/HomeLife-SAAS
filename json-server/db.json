@@ -1,154 +1,51 @@
 {
   "users": [
     {
-      "id": 0,
+      "name": "Thibault",
       "surname": "Brasseur",
-      "name": "Pierre",
-      "group": "educ",
-      "fonction": "",
-      "mail": "test@educ",
-      "password": "1234"
+      "photoProfil": "C:\\fakepath\\foto profil .jpeg",
+      "group": "Educatif",
+      "fonction": "Moniteur éducateur",
+      "mail": "a@a",
+      "password": "aaaaaa",
+      "id": 0
     },
     {
-      "id": 1,
-      "surname": "Labrie",
-      "name": "Marie",
-      "group": "medical",
-      "fonction": "",
-      "mail": "marie@ccas-medical.fr",
-      "password": "medical"
+      "name": "Julie",
+      "surname": "Laborde",
+      "photoProfil": "C:\\fakepath\\foto profil .jpeg",
+      "group": "Medical",
+      "fonction": "Infirmière",
+      "mail": "b@b",
+      "password": "bbbbbb",
+      "id": 1
     },
     {
-      "id": 2,
-      "surname": "Durand",
-      "name": "Alain",
-      "group": "admin",
-      "fonction": "",
-      "mail": "jean@ccas-admin.fr",
-      "password": "admin"
+      "name": "Monique",
+      "surname": "Lafrance",
+      "photoProfil": "C:\\fakepath\\foto profil .jpeg",
+      "group": "Sanitaire",
+      "fonction": "Femme de ménage",
+      "mail": "c@c",
+      "password": "cccccc",
+      "id": 2
     },
     {
-      "params": {
-        "id": 3,
-        "surname": "test",
-        "name": "test",
-        "group": "educ",
-        "fonction": "test",
-        "mail": "t-brasseur@hotmail.fr",
-        "password": "aaaaaa"
-      },
+      "name": "Bill",
+      "surname": "Truman",
+      "photoProfil": "C:\\fakepath\\foto profil .jpeg",
+      "group": "Direction",
+      "fonction": "Chef de service",
+      "mail": "bill@a",
+      "password": "aaaaaa",
       "id": 3
-    },
-    {
-      "params": {
-        "id": 3,
-        "surname": "test",
-        "name": "test",
-        "group": "educ",
-        "fonction": "test",
-        "mail": "t-brasseur@hotmail.fr",
-        "password": "aaaaaa"
-      },
-      "id": 4
-    },
-    {
-      "data": {
-        "id": 3,
-        "surname": "test",
-        "name": "test",
-        "group": "educ",
-        "fonction": "test",
-        "mail": "t-brasseur@hotmail.fr",
-        "password": "zzzzzz"
-      },
-      "id": 5
-    },
-    {
-      "data": {
-        "id": 3,
-        "surname": "test",
-        "name": "test",
-        "group": "educ",
-        "fonction": "test",
-        "mail": "t-brasseur@hotmail.fr",
-        "password": "123456"
-      },
-      "id": 6
-    },
-    {
-      "data": {
-        "id": 3,
-        "surname": "test",
-        "name": "test",
-        "group": "educ",
-        "fonction": "test",
-        "mail": "t-brasseur@hotmail.fr",
-        "password": "qqqqqq"
-      },
-      "id": 7
-    },
-    [
-      {
-        "id": 3,
-        "surname": "testaaaa",
-        "name": "test",
-        "group": "educ",
-        "fonction": "test",
-        "mail": "brasseur.blz@gmail.com",
-        "password": "aaaaaa"
-      }
-    ],
-    {
-      "surname": "testaaaaqqq",
-      "name": "test",
-      "group": "educ",
-      "fonction": "test",
-      "mail": "rojas.jofre@gmail.com",
-      "password": "aaaaaa",
-      "id": 9
-    },
-    {
-      "surname": "testaaaaqqq",
-      "name": "test",
-      "group": "educ",
-      "fonction": "test",
-      "mail": "rojas.jofre@gmail.com",
-      "password": "123456",
-      "id": 10
-    },
-    {
-      "surname": "testaaaaqqq",
-      "name": "test",
-      "group": "educ",
-      "fonction": "test",
-      "mail": "t-brasseur@hotmail.fr",
-      "password": "aaaaaa",
-      "id": 11
-    },
-    {
-      "surname": "PAul",
-      "name": "test",
-      "group": "educ",
-      "fonction": "test",
-      "mail": "fdudigitalagency@gmail.com",
-      "password": "654321",
-      "id": 12
-    },
-    {
-      "surname": "PAul",
-      "name": "test",
-      "group": "educ",
-      "fonction": "test",
-      "mail": "t-brasseur@hotmail.fr",
-      "password": "7654321",
-      "id": 13
     }
   ],
   "residents": [
     {
       "name": "Dujardin",
       "surname": "Camille",
-      "age": 17,
+      "age": 7,
       "ProfileFoto": "testsrc"
     },
     {
