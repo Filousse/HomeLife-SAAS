@@ -1,39 +1,36 @@
 import React from "react"
-// import api from "./api/db"
 import Signup from "./components/authentification/Signup"
 import { Container } from "react-bootstrap"
 import { AuthProvider } from "./contexts/AuthContext"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Dashboard from "./pages/Dashboard"
+import Home from "./pages/Home"
 import Login from "./components/authentification/Login"
 import PrivateRoute from "./components/authentification/PrivateRoute"
 import ForgotPassword from "./components/authentification/ForgotPassword"
 import UpdateProfile from "./components/authentification/UpdateProfile"
+import NewStaff from "./components/dashboard/NewStaff"
+import CorrespondanceEducative from "./pages/Widgets/CorrespondanceEducative"
+import WidgetEduc_1 from "./pages/Widgets/WidgetEduc_1"
 
 function App() {
 
-  // useEffect(() => {
-  //     const getDb = async () => {
-  //       const response = await api.get("/users");
-  //       console.log("=== DATA =>", response.data)
-  //       return response.data;
-  //     };
-  //   getDb();
-  // }, []);
-
   return (
     <Container
-      className="d-flex align-items-center justify-content-center"
-      style={{ minHeight: "100vh" }}
+      className="align-items-center justify-content-center"
+      style={{ minHeight: "100vh", maxHeight: "600vh" }}
     >
-      <div className="w-100" style={{ maxWidth: "400px" }}>
+      <div >
         <Router>
             <AuthProvider>
             <Switch>
               <PrivateRoute exact path="/" component={Dashboard} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
-              <Route exact path="/" component={Dashboard} />
-              <Route path="/update-profile" component={UpdateProfile} />
+              <PrivateRoute path="/create-staff" component={NewStaff} />
+              <PrivateRoute path="/Cahier de correspondance" component={CorrespondanceEducative} />
+              <PrivateRoute path="/widgetEduc_1" component={WidgetEduc_1} />
+              <Route exact path="/home" component={Home} />
+              <Route path="/login" component={Login} />
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />

@@ -1,0 +1,59 @@
+
+{
+    "medical" : [
+        {
+          "flag": "./assets/img/002-rotation.png",
+          "name": "Roulement du personnel médical"
+        },
+        {
+          "flag": "./assets/img/001-medical-file.png",
+          "name": "Dossiers médicaux"
+        }
+    ],
+    "educative" : [
+        {
+          "flag": "./assets/img/002-rotation.png",
+          "name": "Roulement du personnel éducatif"
+        },
+        {
+          "flag": "./assets/img/002-family.png",
+          "name": "Cahier de liaison"
+        },
+        {
+          "flag": "./assets/img/003-journal-de-bord.png",
+          "name": "cahier de correspondance"  
+        }
+    ],  
+    "overall" : [
+        {
+          "flag": "./assets/img/001-basic-needs.png",
+          "name": "Fiches besoins"
+        },
+        {
+        "flag": "./assets/img/003-tchat-telephonique.png",
+        "name": "Tchat"
+
+      },
+        {
+          "flag": "./assets/img/001-blueprint.png",
+          "name": "Plan des chambres"
+        },
+        {
+          "flag": "./assets/img/002-translation.png",
+          "name": "Pictograme"
+          },
+          {
+            "flag": "./assets/img/003-planning.png",
+            "name": "Planning des jeunes"
+          },
+          {
+            "flag": "./assets/img/001-meeting.png",
+            "name": "Réunions"
+          },
+          {
+            "flag": "./assets/img/002-medicament.png",
+            "name": "Suivi et traitement"
+          }
+
+    ]
+  }

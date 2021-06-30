@@ -1,13 +1,20 @@
-import React from 'react';
-import Header from '../components/Header'
+import React, {useState} from 'react';
+import Header from '../components/dashboard/Header'
+import Grid from '../components/dashboard/Grid'
+import Footer from "../components/Footer"
 
 const Dashboard = () => {
-  return (
-    <div>
-      <Header></Header>
-      <h1>Dashboard</h1>
+  const [team, updateTeam ]= useState("")
 
-    </div>
+
+  console.log("team in parents=>", team);
+  return (
+  
+    <>
+      <Header team={team}></Header>
+      <Grid team={team} updateTeam={updateTeam}></Grid>
+      <Footer/>
+    </>
   );
 };
 

@@ -53,70 +53,61 @@ export default function Signup() {
       <Row className="justify-content-center m-4">
        <Card className="w-75" style={{"maxWidth": "400px"}}>
         <Card.Body>
-          <h2 className="text-center mb-4">Créer votre compte :</h2>
+          <h2 className="text-center mb-4">Créer un nouveau employer :</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="name">
-              <Form.Label>Noms <strong style={{color:"#F2420E"}}>*</strong></Form.Label>
+              <Form.Label>Noms de l'agent<strong style={{color:"#F2420E"}}>*</strong></Form.Label>
               <Form.Control type="name" ref={nameRef} required />
             </Form.Group>
             <Form.Group id="surname">
-              <Form.Label>prénoms <strong style={{color:"#F2420E"}}>*</strong></Form.Label>
+              <Form.Label>prénoms de l'agent<strong style={{color:"#F2420E"}}>*</strong></Form.Label>
               <Form.Control type="surname" ref={surnameRef} required />
             </Form.Group>
             <Form.Group id="file">
-              <Form.Label>Photo de profil <strong style={{color:"#F2420E"}}>*</strong></Form.Label>
+              <Form.Label>Photo de profil de l'agent</Form.Label>
               <Form.Control
                   type="file"
                   id="avatar" name="avatar" title = "Choose a video please"
                   accept="image/png, image/jpeg"
                   ref={photoRef} 
-                  required
               />
               <label>png, jpeg</label>
             </Form.Group>
             <Form.Group id="group">
-              <Form.Label>Sélectionner votre équipe <strong style={{color:"#F2420E"}}>*</strong></Form.Label>           
+              <Form.Label>Sélectionner son équipe <strong style={{color:"#F2420E"}}>*</strong></Form.Label>           
               <Form.Control ref={groupRef} as="select" required >
                 <option>Educatif</option>
                 <option>Medical</option>
-                <option>Sanitaire</option>
-                <option>Administratif</option>
-                <option>Direction</option>
               </Form.Control>
             </Form.Group>
             <Form.Group id="fonction">
-              <Form.Label>Sélectionner votre poste professionelle <strong style={{color:"#F2420E"}}>*</strong></Form.Label>
+              <Form.Label>Sélectionner son poste professionelle <strong style={{color:"#F2420E"}}>*</strong></Form.Label>
               <Form.Control type="fonction" ref={fonctionRef} required />
             </Form.Group>
             <Form.Group id="email">
-              <Form.Label>Email <strong style={{color:"#F2420E"}}>*</strong></Form.Label>
+              <Form.Label>Email de l'agent<strong style={{color:"#F2420E"}}>*</strong></Form.Label>
               <Form.Control type="email" ref={emailRef} required />
             </Form.Group>
             <Form.Group id="email-confirm">
-              <Form.Label>Confirmation de votre email <strong style={{color:"#F2420E"}}>*</strong></Form.Label>
+              <Form.Label>Confirmation de l'email <strong style={{color:"#F2420E"}}>*</strong></Form.Label>
               <Form.Control type="email" ref={emailConfirmRef} required />
             </Form.Group>
             <Form.Group id="password">
-              <Form.Label>Mot de passe <strong style={{color:"#F2420E"}}>*</strong></Form.Label>
+              <Form.Label>Mot de passe de l'agent<strong style={{color:"#F2420E"}}>*</strong></Form.Label>
               <Form.Control type="password" ref={passwordRef} required />
             </Form.Group>
             <Form.Group id="password-confirm">
-              <Form.Label>Confirmation de votre mot de passe <strong style={{color:"#F2420E"}}>*</strong></Form.Label>
+              <Form.Label>Confirmation du mot de passe <strong style={{color:"#F2420E"}}>*</strong></Form.Label>
               <Form.Control type="password" ref={passwordConfirmRef} required />
             </Form.Group>
             <Button disabled={loading} className="w-100" type="submit">
-              Créer mon compte
+              Créer le compte de mon employer
             </Button>
           </Form>
         </Card.Body>
       </Card>
       </Row>
-      <div className="w-100 text-center mt-2">
-        <div>Vous possédez un compte? </div>
-         <Link to="/login">Se connecter</Link> 
-      </div>
-      <br></br>
     </>
   )
 }

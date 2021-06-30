@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react"
-import { Form, Button, Card, Alert } from "react-bootstrap"
+import { Form, Button, Card, Alert, Row } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 
@@ -37,8 +37,8 @@ export default function UpdateProfile() {
 
   return (
     <>
-    <br></br>
-      <Card>
+    <Row className="row justify-content-center m-4">
+       <Card className="w-75" style={{"maxWidth": "400px"}}>
         <Card.Body>
           <h2 className="text-center mb-4">Profil</h2>
           {error && <Alert variant="danger">{error}</Alert>} 
@@ -88,9 +88,11 @@ export default function UpdateProfile() {
           </Form>
         </Card.Body>
       </Card>
+      </Row>
       <div className="w-100 text-center mt-2">
         <Link to="/">Annulé</Link>
       </div>
+      <br></br>
     </>
   )
 }
