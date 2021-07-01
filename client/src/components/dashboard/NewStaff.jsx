@@ -1,11 +1,13 @@
 import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert, Row } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
-import { Link, useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom"
+
 
 export default function Signup() {
   const nameRef = useRef()
   const surnameRef = useRef()
+  const { currentUser } = useAuth()
   const photoRef = useRef()
   const groupRef =useRef()
   const fonctionRef = useRef() 
@@ -35,6 +37,7 @@ export default function Signup() {
           await signup(
             surnameRef.current.value,
             nameRef.current.value,
+            currentUser.name,
             photoRef.current.value,
             groupRef.current.value,
             fonctionRef.current.value,

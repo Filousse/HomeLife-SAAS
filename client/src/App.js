@@ -20,7 +20,6 @@ function App() {
       className="align-items-center justify-content-center"
       style={{ minHeight: "100vh", maxHeight: "600vh" }}
     >
-    
       <div >
         <Router>
             <AuthProvider>

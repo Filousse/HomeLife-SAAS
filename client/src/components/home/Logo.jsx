@@ -1,12 +1,7 @@
 import React from 'react';
-import { Link, useHistory } from "react-router-dom"
+import { Container } from "react-bootstrap"
 
-const Logo = () => {
-        const history = useHistory()
-        const handleLink = () =>{
-            history.push("/")
-        }
- 
+const Logo = () => { 
     return (
         <div className="content">
             <div className="cat">
@@ -31,20 +26,10 @@ const Logo = () => {
             </div>
             <div className="tail"></div>
             </div>
-            <div className="wall" style={{color:"white" , textAlign:"center"}}>
-                <strong style={{fontSize:"250%"}}>Sweet Home</strong>
-                <div style={{fontSize:"110%" }}>Logiciel de gestion du quotidien	des usagers du secteur social et médico social.
-                    <div style={{display:"flex"}}>
-                        <div style={{flex: 6}}>
-                            <Link to="/signup" onClick={handleLink}>Essai gratuit</Link>
-                        </div>
-                        <div style={{flex: 6}}>
-                            <Link to="/login" >Se connecter</Link>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <Container className="w-75 p-3 text-light text-center wall" >
+                <h1 style={{"font-weight": "bold"}}>SWEET HOME</h1>
+                <h3>Logiciel de gestion du quotidien des usagers du secteur social et médico social.</h3>
+            </Container>
         </div>
     );
 };

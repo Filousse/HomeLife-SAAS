@@ -58,7 +58,10 @@ export default function Header(props) {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse className="justify-content-end">     
               <Nav.Link className="text-light" href="#Service" active="active" ></Nav.Link>
-              { team == "Administrateur" | team == ""  && 
+              { team == "Administrateur" && 
+               <Nav.Link className="text-light" onClick={handleStaffSetting} >Personnels</Nav.Link>
+              }   
+              { team == ""  && 
                <Nav.Link className="text-light" onClick={handleStaffSetting} >Personnels</Nav.Link>
               }   
                 <Nav.Link className="text-light" href="#Contact">Usagers</Nav.Link>

@@ -10,19 +10,10 @@
 
   .wall {
     background-color: #e68f8f;
-    width: 90%;
-    height: 60%;
-    min-height: 160px;
-    top: 51%;
-    position: absolute;
-    border-radius: 10px;
+    border-radius: 20px;
     z-index: 1;
-    padding: 0px 10px 100px 10px;
   }
-   
-  .wall::after {
-    left: 75%;
-  }
+
   
   .cat {
     width: 200px;

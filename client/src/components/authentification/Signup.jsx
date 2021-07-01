@@ -7,8 +7,6 @@ export default function Signup() {
   const nameRef = useRef()
   const surnameRef = useRef()
   const photoRef = useRef()
-  const groupRef =useRef()
-  const fonctionRef = useRef() 
   const emailRef = useRef()
   const emailConfirmRef = useRef()
   const passwordRef = useRef()
@@ -33,13 +31,14 @@ export default function Signup() {
       setError("")
       setLoading(true)
           await signup(
-            surnameRef.current.value,
             nameRef.current.value,
+            surnameRef.current.value,
+            "adminName",
             photoRef.current.value,
-            groupRef.current.value,
-            fonctionRef.current.value,
+            "Administarteur",
+            "adminGroup",
             emailRef.current.value, 
-            passwordRef.current.value
+            passwordRef.current.value,
           )
           history.push("/")
     } catch {
@@ -65,29 +64,14 @@ export default function Signup() {
               <Form.Control type="surname" ref={surnameRef} required />
             </Form.Group>
             <Form.Group id="file">
-              <Form.Label>Photo de profil <strong style={{color:"#F2420E"}}>*</strong></Form.Label>
+              <Form.Label>Photo de profil </Form.Label>
               <Form.Control
                   type="file"
                   id="avatar" name="avatar" title = "Choose a video please"
                   accept="image/png, image/jpeg"
                   ref={photoRef} 
-                  required
               />
               <label>png, jpeg</label>
-            </Form.Group>
-            <Form.Group id="group">
-              <Form.Label>Sélectionner votre équipe <strong style={{color:"#F2420E"}}>*</strong></Form.Label>           
-              <Form.Control ref={groupRef} as="select" required >
-                <option>Educatif</option>
-                <option>Medical</option>
-                <option>Sanitaire</option>
-                <option>Administratif</option>
-                <option>Direction</option>
-              </Form.Control>
-            </Form.Group>
-            <Form.Group id="fonction">
-              <Form.Label>Sélectionner votre poste professionelle <strong style={{color:"#F2420E"}}>*</strong></Form.Label>
-              <Form.Control type="fonction" ref={fonctionRef} required />
             </Form.Group>
             <Form.Group id="email">
               <Form.Label>Email <strong style={{color:"#F2420E"}}>*</strong></Form.Label>

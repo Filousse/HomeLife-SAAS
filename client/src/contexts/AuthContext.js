@@ -13,11 +13,12 @@ export function AuthProvider({ children }) {
        const [loading, setLoading] = useState(true)
        const [errorAuthContext, setErrorAuthContext ] = useState("")
 
-      function signup( surname, name, photoProfil, group, fonction, mail, password) {
+      function signup( name, surname, adminName, photoProfil, group, fonction, mail, password) {
           api.post( '/users' , 
             {
               name: name,
               surname: surname,
+              adminName: adminName,
               photoProfil: photoProfil,
               group: group,
               fonction: fonction,

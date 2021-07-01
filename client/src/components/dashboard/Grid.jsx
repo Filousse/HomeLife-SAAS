@@ -22,7 +22,7 @@ const Grid = ({updateTeam}) => {
     }
         
     return (
-        <Container className=" w-100">
+        <Container className=" w-100 pb-3">
             <Card  bg="light" fluid style={{"paddingLeft": "20px", "paddingTop": "5px", "margin":"20px"}}>
                 <Row>
                     {radios.map((radio) => {
